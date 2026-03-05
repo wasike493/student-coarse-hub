@@ -1,57 +1,110 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
-  <title>Student Hub</title>
-  <script src="https://cdn.tailwindcss.com"></script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Smart Barber Shop</title>
+
+<link rel="stylesheet" href="style.css">
+
 </head>
-<body class="bg-gray-100">
 
-  <div class="max-w-md mx-auto mt-20 bg-white p-6 rounded-xl shadow">
-    <h1 class="text-2xl font-bold mb-4">Student Hub Login</h1>
+<body>
 
-    <input id="email" class="w-full border p-2 mb-3" placeholder="Email">
-    <input id="password" type="password" class="w-full border p-2 mb-3" placeholder="Password">
+<header>
 
-    <button onclick="register()" class="bg-blue-500 text-white px-4 py-2 rounded w-full mb-2">
-      Register
-    </button>
+<h1>Smart Barber Shop</h1>
 
-    <button onclick="login()" class="bg-green-600 text-white px-4 py-2 rounded w-full">
-      Login
-    </button>
-  </div>
+<p>Professional Haircuts in Nairobi</p>
 
-<script>
-async function register() {
-  await fetch("http://localhost:3000/register", {
-    method: "POST",
-    headers: {"Content-Type": "application/json"},
-    body: JSON.stringify({
-      email: email.value,
-      password: password.value
-    })
-  });
+<a href="#contact" class="btn">Book Appointment</a>
 
-  alert("Registered! Now login.");
-}
+</header>
 
-async function login() {
-  const res = await fetch("http://localhost:3000/login", {
-    method: "POST",
-    headers: {"Content-Type": "application/json"},
-    body: JSON.stringify({
-      email: email.value,
-      password: password.value
-    })
-  });
 
-  const data = await res.json();
+<section class="about">
 
-  localStorage.setItem("token", data.token);
+<h2>About Us</h2>
 
-  window.location.href = "results.html";
-}
-</script>
+<p>
+We provide professional haircuts, beard trimming, and hair styling.
+Visit us for quality service and affordable prices.
+</p>
+
+</section>
+
+
+<section class="services">
+
+<h2>Our Services</h2>
+
+<div class="service-box">
+
+<div class="card">
+<h3>Haircut</h3>
+<p>KSh 300</p>
+</div>
+
+<div class="card">
+<h3>Beard Trim</h3>
+<p>KSh 200</p>
+</div>
+
+<div class="card">
+<h3>Hair Styling</h3>
+<p>KSh 400</p>
+</div>
+
+</div>
+
+</section>
+
+
+<section class="contact" id="contact">
+
+<h2>Contact Us</h2>
+
+<p>📍 Nairobi, Kenya</p>
+
+<p>📞 0706758212</p>
+
+<a class="whatsapp"
+href="https://wa.me/254706758212"
+target="_blank">
+
+Chat on WhatsApp
+
+</a>
+
+</section>
+
+
+<section class="map">
+
+<h2>Find Us</h2>
+
+<iframe
+src="https://www.google.com/maps?q=Nairobi&output=embed"
+width="100%"
+height="300"
+style="border:0;"
+allowfullscreen=""
+loading="lazy">
+
+</iframe>
+
+</section>
+
+
+<footer>
+
+<p>© 2026 Smart Barber Shop</p>
+
+</footer>
+
+<script src="script.js"></script>
 
 </body>
+
 </html>

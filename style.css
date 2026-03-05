@@ -1,90 +1,101 @@
-/* RESET */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+body{
+
+font-family: Arial;
+margin:0;
+background:#f5f5f5;
+color:#333;
+
 }
 
-/* BODY */
-body {
-    font-family: 'Segoe UI', sans-serif;
-    background: #f4f6f9;
+header{
+
+background:#111;
+color:white;
+text-align:center;
+padding:70px 20px;
+
 }
 
-/* NAVBAR */
-header {
-    background: #0d47a1;
-    color: white;
-    padding: 15px 30px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+header h1{
+
+font-size:42px;
+
 }
 
-nav a {
-    color: white;
-    margin: 0 12px;
-    text-decoration: none;
+.btn{
+
+background:#ff9800;
+color:white;
+padding:12px 25px;
+text-decoration:none;
+border-radius:6px;
+
 }
 
-/* HERO */
-.hero {
-    padding: 80px 20px;
-    text-align: center;
-    background: linear-gradient(135deg, #1976d2, #42a5f5);
-    color: white;
+.about{
+
+padding:60px 20px;
+text-align:center;
+
 }
 
-.hero h1 {
-    font-size: 42px;
+.services{
+
+background:#eee;
+padding:60px 20px;
+text-align:center;
+
 }
 
-.btn {
-    background: #00c853;
-    padding: 12px 25px;
-    border: none;
-    border-radius: 6px;
-    color: white;
-    cursor: pointer;
-    margin: 10px;
-    transition: 0.3s;
+.service-box{
+
+display:flex;
+justify-content:center;
+gap:20px;
+flex-wrap:wrap;
+
 }
 
-.btn:hover {
-    background: #00a844;
+.card{
+
+background:white;
+padding:25px;
+border-radius:8px;
+width:200px;
+box-shadow:0 2px 10px rgba(0,0,0,0.1);
+
 }
 
-/* CARDS */
-.container {
-    padding: 40px;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-    gap: 20px;
+.contact{
+
+padding:60px 20px;
+text-align:center;
+
 }
 
-.card {
-    background: white;
-    padding: 25px;
-    border-radius: 12px;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-    transition: 0.3s;
+.whatsapp{
+
+display:inline-block;
+margin-top:20px;
+padding:12px 20px;
+background:#25D366;
+color:white;
+text-decoration:none;
+border-radius:6px;
+
 }
 
-.card:hover {
-    transform: translateY(-5px);
+.map{
+
+padding:40px;
+
 }
 
-/* FORM */
-select, input, textarea {
-    width: 100%;
-    padding: 10px;
-    margin-top: 10px;
-}
+footer{
 
-/* FOOTER */
-footer {
-    text-align: center;
-    background: #111;
-    color: white;
-    padding: 20px;
+background:#111;
+color:white;
+text-align:center;
+padding:20px;
+
 }
